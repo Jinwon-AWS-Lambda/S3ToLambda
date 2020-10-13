@@ -34,7 +34,7 @@ exports.handler = function(event, context, callback) {
     }
     var imageType = typeMatch[1];
     console.log("To keep it simple, we will accept only png or jpeg image types");
-    if (imageType != "jpg" && imageType != "png") {
+    if (imageType != "jpeg" && imageType != "png") {
         callback('Unsupported image type: ${imageType}');
         return;
     }
